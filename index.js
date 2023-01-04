@@ -1,12 +1,14 @@
-const express = require("express");
-const app = express();
-const dotenv = require('dotenv');
+const express = require("express")
+const app = express()
+const dotenv = require("dotenv")
 
-require('./db/conn')
+require("./db/conn")
 const projectdata = require("./model/projectschema")
-const PORT = process.env.PORT || 8080;
-app.use(express.json());
+const PORT = process.env.PORT || 8080
+app.use(express.json())
 
-app.use(require('./router/auth'));
+app.use(require("./router/auth"))
 
-app.listen(PORT, () => { console.log("running "+ PORT) })
+app.listen(PORT, () => {
+  console.log("running " + PORT)
+})
