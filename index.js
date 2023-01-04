@@ -1,7 +1,7 @@
 const express = require("express")
 const app = express()
 const dotenv = require("dotenv")
-const apis = require("./router/auth")
+const apis = require("./api")
 
 require("./db/conn")
 // const projectdata = require("./model/projectschema")
